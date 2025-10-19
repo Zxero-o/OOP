@@ -61,7 +61,7 @@ public class Login extends javax.swing.JFrame {
                             if (email == null || email.isEmpty() || status.equalsIgnoreCase("Pending")) {
                                 new StudentLogin().setVisible(true);
                             } else {
-                                new StudentDashboard().setVisible(true);
+                                new StudentLogin().setVisible(true);
                             }
                         }                          
                 }
@@ -311,6 +311,9 @@ public class Login extends javax.swing.JFrame {
 
     private void btnForgotPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnForgotPasswordActionPerformed
         // TODO add your handling code here:
+        Signup signup = new Signup();
+        signup.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnForgotPasswordActionPerformed
 
     /**
